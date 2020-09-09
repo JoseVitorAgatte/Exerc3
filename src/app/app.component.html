@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <fatec-logo></fatec-logo>
+
+  <div class="container">
+    <table class="table table-hover table-striped" *ngFor="let c of cursos">
+      <p>Curso: {{c.nome}}</p>
+    </table>
+    </div>
+
+  <div>
+    <app-curso-adiciona (adicionarCurso)="onAdicionarCurso($event)"></app-curso-adiciona>
+  </div>-
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div class="container">
+
+  <div class="row">
+    <div class="form-group">
+      <label for="cursoInput">Novo Curso</label>
+     <input type="text" class="form-control" id="cursoInput" #curso>
+    </div>
+  </div>
+
+  <div class="row">
+   <button class="btn btn-primary " (click)="adicionar(curso.value)">
+      Adicionar Novo Curso
+   </button>
+  </div>
+</div>
