@@ -6,20 +6,29 @@
   <title>Document</title>
 </head>
 <body>
- <!-- <fatec-logo></fatec-logo>
+ <fatec-logo></fatec-logo>
 
-  <div class="container">
+  <div class="container" [ngClass]="obterClasseValor()">
     <table class="table table-hover table-striped" *ngFor="let c of cursos">
       <p>Curso: {{c.nome}}</p>
     </table>
     </div>
 
   <div>
-    <app-curso-adiciona [ngStyle]="{'color': '#28A745', 'font-size':'28px', 'font-weight':'bold'}"
+    <app-curso-adiciona [ngStyle]="obterEstilos()"
     (adicionarCurso)="onAdicionarCurso($event)"></app-curso-adiciona>
   </div>
 
-  <button class="btn btn-success btn-block"> <a href="./alunos.component.html"></a></button>  -->
-  <alunos>ads</alunos>
+  <br/>
+  <br/>
+
+  <button class="btn btn-success" routerLink="./aluno.component.html" routerLinkActive="seleted">
+    Clique aqui e ganhe virus
+  </button>
+  <br/>
+
+
+
+  <!--<alunos></alunos>-->
 </body>
 </html>

@@ -1,5 +1,5 @@
 <div class="container">
-  <form #alunoForm ="ngForm" {ngSubmit}="salvar(alunoForm)">
+  <form #alunoForm ="ngForm" (ngSubmit)="salvar(alunoForm)">
 
     <div class="row">
       <div class="form-group col-12">
@@ -40,8 +40,9 @@
   </form>
 </div>
 
+<!--Exibir alunos-->
 <div class="card" style="width: 18rem">
-  <div class="card-head text-center">]
+  <div class="card-head text-center">
     <div class="d-flex flex-row">
         <p>{{alunoForm.value.curso}}</p>
     </div>

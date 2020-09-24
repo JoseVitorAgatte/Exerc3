@@ -9,8 +9,11 @@ import {Aluno }from '../model/aluno'
   styleUrls: ['./alunos.component.css']
 })
 export class AlunosComponent{
+
   @Input() cursos;
+
   aluno: Aluno = new Aluno;
+  
   salvar(alunoForm){
     const nome = alunoForm.value.nome;
     const idade = alunoForm.value.idade;

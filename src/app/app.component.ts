@@ -10,7 +10,7 @@ import {TabelaCursosComponent } from './tabela-cursos/tabela-cursos.component';
 
 export class AppComponent {
   title = 'exercicio1';
-
+  valor = 5;
   @Input() cursos=[
     {nome: 'Análise e Desenvolvimento de Sistemas'},
     {nome: 'Eventos'},
@@ -21,5 +21,25 @@ export class AppComponent {
 
   onAdicionarCurso(curso){
     this.cursos = [curso, ...this.cursos];
+
+    this.valor = this.valor + 1;
+  }
+
+  obterEstilos(){
+
+    return{
+      color: '#28A745',
+      font: '28%' ,
+      weight: 'bold'
+    }
+  }
+
+  obterClasseValor(){
+    return{
+      'num-par': this.valor%2 == 0,
+      'num-impar': this.valor%2 == 1,
+    }
+
   }
 }
+
