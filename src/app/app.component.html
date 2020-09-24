@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <fatec-logo></fatec-logo>
+
+  <div class="container" [ngClass]="obterClasseValor()">
+    <table class="table table-hover table-striped" *ngFor="let c of cursos">
+      <p>Curso: {{c.nome}}</p>
+    </table>
+    </div>
+
+  <div>
+    <app-curso-adiciona [ngStyle]="obterEstilos()"
+    (adicionarCurso)="onAdicionarCurso($event)"></app-curso-adiciona>
+  </div>
+
+  <br/>
+  <br/>
+
+  <button class="btn btn-success" routerLink="./aluno.component.html" routerLinkActive="seleted">
+    Clique aqui e ganhe virus
+  </button>
+  <br/>
+
+
+
+  <!--<alunos></alunos>-->
+</body>
+</html>
