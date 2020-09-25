@@ -9,7 +9,7 @@
  <fatec-logo></fatec-logo>
 
   <div class="container" [ngClass]="obterClasseValor()">
-    <table class="table table-hover table-striped" *ngFor="let c of cursos">
+    <table class="table table-hover table-striped"  *ngFor="let c of cursos" [ngClass]="obterCorFonte()">
       <p>Curso: {{c.nome}}</p>
     </table>
     </div>
@@ -21,14 +21,10 @@
 
   <br/>
   <br/>
-
-  <button class="btn btn-success" routerLink="./aluno.component.html" routerLinkActive="seleted">
-    Clique aqui e ganhe virus
-  </button>
   <br/>
 
+  <alunos></alunos>
 
-
-  <!--<alunos></alunos>-->
+  <!---->
 </body>
 </html>

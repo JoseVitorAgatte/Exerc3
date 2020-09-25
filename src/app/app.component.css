@@ -1,3 +1,23 @@
 .container{
   text-align: center;
 }
+
+.num-par{
+  background-color:#1E90FF;
+  border-radius: 12px;
+  color: blue;
+}
+
+.num-impar{
+  background-color: #8B0000;
+  border-radius: 10px;
+  color: white;
+}
+
+.num-impar-font{
+  color: gray;
+}
+
+.num-par-font{
+  color: blue;
+}

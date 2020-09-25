@@ -10,14 +10,16 @@ import {TabelaCursosComponent } from './tabela-cursos/tabela-cursos.component';
 
 export class AppComponent {
   title = 'exercicio1';
+
   valor = 5;
+
   @Input() cursos=[
     {nome: 'Análise e Desenvolvimento de Sistemas'},
     {nome: 'Eventos'},
     {nome: 'Gestão Comercial'},
     {nome: 'Recursos Humanos'},
     {nome: 'Gestão Empresarial - EAD'},
-];
+  ];
 
   onAdicionarCurso(curso){
     this.cursos = [curso, ...this.cursos];
@@ -40,6 +42,14 @@ export class AppComponent {
       'num-impar': this.valor%2 == 1,
     }
 
+  }
+
+  obterCorFonte(){
+    return{
+
+      'num-par-font': this.valor%2 == 0,
+      'num-impar-font': this.valor%2 == 1,
+    }
   }
 }
 

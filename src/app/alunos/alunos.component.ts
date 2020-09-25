@@ -10,10 +10,16 @@ import {Aluno }from '../model/aluno'
 })
 export class AlunosComponent{
 
-  @Input() cursos;
+  @Input() cursos=[
+    {nome: 'Análise e Desenvolvimento de Sistemas'},
+    {nome: 'Eventos'},
+    {nome: 'Gestão Comercial'},
+    {nome: 'Recursos Humanos'},
+    {nome: 'Gestão Empresarial - EAD'},
+  ];
 
   aluno: Aluno = new Aluno;
-  
+
   salvar(alunoForm){
     const nome = alunoForm.value.nome;
     const idade = alunoForm.value.idade;
